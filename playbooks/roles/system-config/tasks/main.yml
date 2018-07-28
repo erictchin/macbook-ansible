@@ -1,0 +1,5 @@
+---
+- name: Set OS X defaults.
+  script: mac-defaults.sh "{{ hostname }}"
+
+- debug: msg="Reboot to apply defaults."

@@ -1,0 +1,15 @@
+---
+homebrew_install: true
+homebrew_cask_install: true
+homebrew_cask_fonts_install: true
+homebrew_upgrade_all_packages: false
+
+homebrew_taps:
+  - homebrew/cask
+  - homebrew/cask-fonts
+
+homebrew_installed_packages:
+
+homebrew_cask_apps:
+
+homebrew_cask_fonts:

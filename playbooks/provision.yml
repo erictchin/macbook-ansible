@@ -1,0 +1,8 @@
+---
+- name: Provision a MacOS Environment.
+  hosts: all
+  gather_facts: yes
+
+  roles:
+    - homebrew
+    - { role: system-config, hostname: "{{ host_name }}" }

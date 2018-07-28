@@ -1,0 +1,7 @@
+---
+- name: Configure MacOS defaults.
+  hosts: all
+  gather_facts: yes
+
+  roles:
+    - { role: system-config, hostname: "{{ host_name }}" }

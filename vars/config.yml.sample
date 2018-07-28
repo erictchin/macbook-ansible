@@ -1,0 +1,135 @@
+---
+host_name: notebook
+
+homebrew_install: true
+homebrew_cask_install: true
+homebrew_cask_fonts_install: true
+homebrew_upgrade_all_packages: false
+
+homebrew_taps:
+  - homebrew/cask
+  - homebrew/cask-fonts
+
+homebrew_installed_packages:
+  - autojump
+  - awscli
+  - azure-cli
+  - bash
+  - bash-completion
+  - coreutils
+  - cowsay
+  - curl
+  - docker-completion
+  - docker-machine-completion
+  - docker-compose-completion
+  - git
+  - gnupg
+  - jq
+  - kubectl
+  - openssl
+  - pstree
+  - python
+  - python3
+  - ripgrep
+  - rlwrap
+  - the_silver_searcher
+  - tree
+  - vim
+  - watch
+  - wget
+
+homebrew_cask_apps:
+  - 1password
+  - atom
+  - calibre
+  - docker
+  - dropbox
+  - evernote
+  - firefox
+  - gas-mask
+  - google-chrome
+  - google-cloud-sdk
+  - iterm2
+  - jetbrains-toolbox
+  - minikube
+  - slack
+  - the-unarchiver
+  - vagrant
+  - vagrant-manager
+  - virtualbox
+  - visual-studio-code
+  - vlc
+  - xquartz
+
+homebrew_cask_fonts:
+  - font-fontawesome
+  - font-meslo-lg
+  - font-dejavu-sans
+  - font-hack
+  - font-charter
+  - font-fantasque-sans-mono
+  - font-input
+  - font-linux-libertine
+  - font-charis-sil
+  - font-norwester
+  - font-mononoki
+  - font-hermit
+  - font-bungee
+  - font-eb-garamond
+  - font-et-book
+  - font-open-sans
+  - font-open-sans-condensed
+  - font-roboto
+  - font-roboto-condensed
+  - font-roboto-mono
+  - font-roboto-slab
+  - font-lato
+  - font-source-code-pro
+  - font-source-sans-pro
+  - font-source-serif-pro
+  - font-montserrat
+  - font-raleway
+  - font-pt-mono
+  - font-pt-sans
+  - font-pt-serif
+  - font-lora
+  - font-merriweather
+  - font-merriweather-sans
+  - font-noto-sans
+  - font-noto-emoji
+  - font-noto-serif
+  - font-exo
+  - font-exo2
+  - font-fira-code
+  - font-fira-mono
+  - font-fira-sans
+  - font-crimson-text
+  - font-vollkorn
+  - font-andada
+  - font-andada-sc
+  - font-abril-fatface
+  - font-cardo
+  - font-libre-baskerville
+  - font-gravitas-one
+  - font-monoid
+  - font-monoisome
+  - font-iosevka
+  - font-oxygen
+  - font-oxygen-mono
+  - font-bebas-neue
+  - font-cabin
+  - font-cabin-condensed
+  - font-cabin-sketch
+  - font-bitstream-vera
+  - font-bree-serif
+  - font-junicode
+  - font-overpass
+  - font-rajdhani
+  - font-tangerine
+  - font-anonymous-pro
+  - font-everson-mono
+  - font-andika
+  - font-cooper-hewitt
+  - font-nunito
+  - font-space-mono
+  - font-metropolis

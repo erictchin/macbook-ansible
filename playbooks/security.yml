@@ -1,0 +1,7 @@
+---
+- name: Harden a MacOS System
+  hosts: all
+  gather_facts: yes
+
+  roles:
+    - security
