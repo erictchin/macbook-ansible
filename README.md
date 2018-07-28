@@ -1,4 +1,4 @@
-# laptop
+# macbook
 
 ## Initial configuration
 
