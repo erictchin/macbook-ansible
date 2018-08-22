@@ -1,7 +1,0 @@
----
-- name: Remove default MacOS applications
-  hosts: all
-  gather_facts: yes
-
-  roles:
-    - scrub
