@@ -16,13 +16,14 @@ homebrew_installed_packages:
   - azure-cli
   - bash
   - bash-completion
+  - bat
   - coreutils
   - cowsay
   - curl
   - docker-completion
   - docker-machine-completion
   - docker-compose-completion
-  - gas-mask
+  - exa
   - git
   - gnupg
   - jq
@@ -31,7 +32,7 @@ homebrew_installed_packages:
   - openssl
   - pstree
   - pyenv
-  - pyenv-virtualenvwrapper
+  - pyenv-virtualenv
   - ripgrep
   - rlwrap
   - the_silver_searcher
@@ -49,6 +50,7 @@ homebrew_cask_apps:
   - dropbox
   - evernote
   - firefox
+  - gas-mask
   - google-chrome
   - google-cloud-sdk
   - gpgtools
@@ -57,6 +59,8 @@ homebrew_cask_apps:
   - minikube
   - readcube
   - slack
+  - spectacle
+  - spotify
   - the-unarchiver
   - vagrant
   - vagrant-manager
