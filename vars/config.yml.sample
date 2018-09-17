@@ -35,6 +35,7 @@ homebrew_installed_packages:
   - pyenv-virtualenv
   - ripgrep
   - rlwrap
+  - terraform
   - the_silver_searcher
   - tree
   - vault

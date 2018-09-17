@@ -6,31 +6,27 @@
 
 - name: Add the taps
   homebrew_tap:
-    tap: "{{ item }}"
+    tap: "{{ homebrew_taps }}"
     state: present
-  with_items: "{{ homebrew_taps }}"
 
 # Brew.
 - name: Install homebrew packages
   homebrew:
-    name: "{{ item }}"
+    name: "{{ homebrew_installed_packages }}"
     state: present
-  with_items: "{{ homebrew_installed_packages }}"
   when: homebrew_install
 
 # Cask.
 - name: Install homebrew-cask packages
   homebrew_cask:
-    name: "{{ item }}"
+    name: "{{ homebrew_cask_apps }}"
     state: present
-  with_items: "{{ homebrew_cask_apps }}"
   when: homebrew_cask_install
 
 - name: Install homebrew-cask fonts
   homebrew_cask:
-    name: "{{ item }}"
+    name: "{{ homebrew_cask_fonts }}"
     state: present
-  with_items: "{{ homebrew_cask_fonts }}"
   when: homebrew_cask_fonts_install
 
 # Upgrade

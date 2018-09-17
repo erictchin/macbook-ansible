@@ -106,7 +106,7 @@ done
 unset IFS
 
 # automatically lock login keychain for inactivity
-security set-keychain-settings -u -t 21600s /Users/"$currentUser"/Library/Keychains/login.keychain
+# security set-keychain-settings -u -t 21600s /Users/"$currentUser"/Library/Keychains/login.keychain
 
 # lock the login keychain when computer sleeps
 security set-keychain-settings -l /Users/"$currentUser"/Library/Keychains/login.keychain
