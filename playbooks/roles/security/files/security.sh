@@ -82,7 +82,6 @@ open "/System/Library/CoreServices/Menu Extras/AirPort.menu"
 
 # ensure nfs server is not running
 nfsd disable
-rm -rf /etc/export
 
 # secure home folders
 IFS=$'\n'
@@ -109,7 +108,7 @@ unset IFS
 # security set-keychain-settings -u -t 21600s /Users/"$currentUser"/Library/Keychains/login.keychain
 
 # lock the login keychain when computer sleeps
-security set-keychain-settings -l /Users/"$currentUser"/Library/Keychains/login.keychain
+# security set-keychain-settings -l /Users/"$currentUser"/Library/Keychains/login.keychain
 
 # enable OCSP and CRL certificate checking
 defaults write com.apple.security.revocation OCSPStyle -string RequireIfPresent

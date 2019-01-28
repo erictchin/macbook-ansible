@@ -30,9 +30,9 @@ homebrew_installed_packages:
   - kubectl
   - kubernetes-helm
   - openssl
+  - pipenv
   - pstree
   - pyenv
-  - pyenv-virtualenv
   - ripgrep
   - rlwrap
   - terraform
@@ -48,13 +48,11 @@ homebrew_cask_apps:
   - atom
   - calibre
   - docker
-  - dropbox
-  - evernote
+  - dozer
   - firefox
   - gas-mask
   - google-chrome
   - google-cloud-sdk
-  - gpgtools
   - iterm2
   - jetbrains-toolbox
   - minikube

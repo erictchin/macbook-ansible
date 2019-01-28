@@ -132,11 +132,6 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
 echo ""
-echo "Add ability to toggle between Light and Dark mode in Yosemite using ctrl+opt+cmd+t."
-# http://www.reddit.com/r/apple/comments/2jr6s2/1010_i_found_a_way_to_dynamically_switch_between/
-sudo defaults write /Library/Preferences/.GlobalPreferences.plist _HIEnableThemeSwitchHotKey -bool true
-
-echo ""
 echo "Increase window resize speed for Cocoa applications."
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 
@@ -165,17 +160,9 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 # General Power and Performance modifications
 ###############################################################################
 
-# echo ""
-# echo "Always hibernate."
-# sudo pmset -a hibernatemode 25
-
 echo ""
 echo "Disable the sudden motion sensor. (it's not useful for SSDs/current MacBooks)"
 sudo pmset -a sms 0
-
-# echo ""
-# echo "Disable system-wide resume."
-# defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 
 echo ""
 echo "Speeding up wake from sleep to 24 hours from an hour"
@@ -196,14 +183,6 @@ echo "Enabling full keyboard access for all controls (enable Tab in modal dialog
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # echo ""
-# echo "Disabling press-and-hold for special keys in favor of key repeat"
-# defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
-
-# echo ""
-# echo "Setting a blazingly fast keyboard repeat rate"
-# defaults write NSGlobalDomain KeyRepeat -int 0
-
-# echo ""
 # echo "Disable auto-correct? (y/n)"
 # defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
@@ -219,10 +198,6 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 echo ""
 echo "Turn off keyboard illumination when computer is not used for 5 minutes"
 defaults write com.apple.BezelServices kDimTime -int 300
-
-echo ""
-echo "Disable display from automatically adjusting brightness."
-sudo defaults write /Library/Preferences/com.apple.iokit.AmbientLightSensor "Automatic Display Enabled" -bool false
 
 echo ""
 echo "Disable keyboard from automatically adjusting backlight brightness in low light."
@@ -282,10 +257,6 @@ echo "Show hidden files in Finder by default."
 defaults write com.apple.Finder AppleShowAllFiles -bool true
 
 echo ""
-echo "Show dotfiles in Finder by default."
-defaults write com.apple.finder AppleShowAllFiles TRUE
-
-echo ""
 echo "Show all filename extensions in Finder by default."
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
@@ -322,12 +293,6 @@ echo ""
 echo "Avoid creation of .DS_Store files on usb and network volumes."
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
-
-# echo ""
-# echo "Disable disk image verification."
-# defaults write com.apple.frameworks.diskimages skip-verify -bool true
-# defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
-# defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
 
 echo ""
 echo "Allowing text selection in Quick Look/Preview in Finder by default"
